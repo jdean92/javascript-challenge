@@ -17,8 +17,13 @@ var row = tbody.append("tr");
     });
 });
 
-var 
+var text = d3.select("#filter-btn");
+function handleChange() {
+    var inputText = d3.select("#datetime")
+    var inputvalue = inputText.property("value");
+    output.text(reversedInput);
+}
    
-
+text.on("change", handleChange);
 
 
