@@ -1,17 +1,15 @@
 // from data.js
 var tableData = data;
-
-
 console.log(tableData)
 
-var tbody = d3.select("tbody")
+var tbody = d3.select("tbody");
 
-console.log(data)
+console.log(data);
 
-data.forEach(=>(tabledata) {
+data.forEach(function(tabledata) {
 
 var row = tbody.append("tr");
-    Object.values(tableData).forEach(=>(value) {
+    Object.values(tabledata).forEach(function(value) {
 
         var cell = row.append("td");
         cell.text(value);
